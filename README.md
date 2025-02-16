@@ -1,6 +1,7 @@
 <h3 align=center>vnmdcvpfug's dotfiles</h3>
 
-this is where the screenshots will be
+<img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/20250216_04h50m05s_grim.png">
+<img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/20250216_04h55m14s_grim.png">
 
 ### Description
 - Document viewer - [zathura](https://github.com/pwmt/zathura)
