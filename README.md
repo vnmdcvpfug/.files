@@ -1,4 +1,4 @@
-<h3 align=center>vnmdcvpfug's dotfiles</h3>
+<h3 align=center>my dotfiles</h3>
 
 <img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/20250216_04h50m05s_grim.png">
 <img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/20250216_04h55m14s_grim.png">
