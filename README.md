@@ -32,11 +32,9 @@ cd dotfiles
 ### Binds
 
 <img src="https://github.com/vnmdcvpfug/.files/blob/main/binds.jpg">
+
+#### Apps
 <table>
-  <tr>
-    <th>Bind</th>
-    <th>Action</th>
-  </tr>
   <tr>
     <td>Leader + B</td>
     <td>Browser</td>
@@ -65,6 +63,10 @@ cd dotfiles
     <td>Leader + Z</td>
     <td>Zathura<td>
   </tr>
+</table>
+
+#### Navigation
+<table>
   <tr>
     <td>Leader + C</td>
     <td>Center a window</td>
@@ -97,6 +99,10 @@ cd dotfiles
     <td>Leader + V</td>
     <td>Make a window floating</td>
   </tr>
+</table>
+
+#### Working with windows
+<table>
   <tr>
     <td>Leader + Left</td>
     <td>Moves focus left</td>
