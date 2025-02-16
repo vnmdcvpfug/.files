@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ACTIVE_WS=$(hyprctl activeworkspace -j | awk 'NR==2 {print $2}' | sed 's/,//')
+WORKSPACES="1 2 3 4"
+CURRENT_THEME=$(gsettings get org.gnome.desktop.interface color-scheme)
+
+if [[ "$CURRENT_THEME" == "'prefer-dark'" ]]; then
+  background="#f0f0f0"
+  foreground="#0f0f0f"
+else
+  background="#0f0f0f"
+  foreground="#f0f0f0"
+fi
+
+for WS in $WORKSPACES; do
+    if [ "$WS" == "$ACTIVE_WS" ]; then
+        echo -n "#[bg=$background,fg=$foreground]$WS#[default] "
+    else
+        echo -n "$WS "
+    fi
+done

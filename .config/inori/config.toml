@@ -1,0 +1,5 @@
+[keybindings]
+next_song = "d"
+previous_song = "a"
+seek = "C-d"
+seek_backwards = "C-a"
