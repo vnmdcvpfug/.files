@@ -45,7 +45,7 @@ cd dotfiles
   </tr>
   <tr>
     <td>Leader + M</td>
-    <td>Switch mode<td>
+    <td>Switch mode</td>
   </tr>
   <tr>
     <td>Leader + W</td>
@@ -61,7 +61,7 @@ cd dotfiles
   </tr>
   <tr>
     <td>Leader + Z</td>
-    <td>Zathura<td>
+    <td>Zathura</td>
   </tr>
 </table>
 
@@ -77,7 +77,7 @@ cd dotfiles
   </tr>
   <tr>
     <td>Leader + F</td>
-    <td>Fullscreen<td>
+    <td>Fullscreen</td>
   </tr>
   <tr>
     <td>Leader + Shift + F</td>
@@ -93,7 +93,7 @@ cd dotfiles
   </tr>
   <tr>
     <td>Leader + Ctrl + Escape</td>
-    <td>Exit Hyprland and logout<td>
+    <td>Exit Hyprland and logout</td>
   </tr>
   <tr>
     <td>Leader + V</td>
