@@ -29,6 +29,108 @@ cd dotfiles
 ./install.sh
 ```
 
+### Binds
+
+<img src="https://github.com/vnmdcvpfug/.files/blob/main/binds.jpg">
+<table>
+  <tr>
+    <th>Bind</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>Leader + B</td>
+    <td>Browser</td>
+  </tr>
+  <tr>
+    <td>Leader + R</td>
+    <td>Menu</td>
+  </tr>
+  <tr>
+    <td>Leader + M</td>
+    <td>Switch mode<td>
+  </tr>
+  <tr>
+    <td>Leader + W</td>
+    <td>Switch wallpaper</td>
+  </tr>
+  <tr>
+    <td>Leader + T</td>
+    <td>Terminal</td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + T</td>
+    <td>Floating terminal</td>
+  </tr>
+  <tr>
+    <td>Leader + Z</td>
+    <td>Zathura<td>
+  </tr>
+  <tr>
+    <td>Leader + C</td>
+    <td>Center a window</td>
+  </tr>
+  <tr>
+    <td>Leader + Escape</td>
+    <td>Exit Hyprland</td>
+  </tr>
+  <tr>
+    <td>Leader + F</td>
+    <td>Fullscreen<td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + F</td>
+    <td>Fullscreen without gaps</td>
+  </tr>
+  <tr>
+    <td>Leader + Q</td>
+    <td>Quit a window</td>
+  </tr>
+  <tr>
+    <td>Leader + P</td>
+    <td>Pin a window</td>
+  </tr>
+  <tr>
+    <td>Leader + Ctrl + Escape</td>
+    <td>Exit Hyprland and logout<td>
+  </tr>
+  <tr>
+    <td>Leader + V</td>
+    <td>Make a window floating</td>
+  </tr>
+  <tr>
+    <td>Leader + Left</td>
+    <td>Moves focus left</td>
+  </tr>
+  <tr>
+    <td>Leader + Right</td>
+    <td>Moves focus right</td>
+  </tr>
+  <tr>
+    <td>Leader + Up</td>
+    <td>Moves focus up</td>
+  </tr>
+  <tr>
+    <td>Leader + Down</td>
+    <td>Moves focus down</td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + Left</td>
+    <td>Moves a window left</td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + Right</td>
+    <td>Moves a window right</td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + Up</td>
+    <td>Moves a window up</td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + Down</td>
+    <td>Moves a window down</td>
+  </tr>
+</table>
+
 ### Credits
 
 - Cassini Jupiter Portrait by NASA - https://images.nasa.gov/details/PIA04866
