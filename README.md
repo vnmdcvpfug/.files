@@ -20,7 +20,7 @@ sudo pacman -S git
 cd ~
 
 # Clone this repository
-git clone https://github.com/vnmdcvpfug/dotfiles.git
+git clone https://github.com/vnmdcvpfug/.files.git
 
 # Go to the repository directory
 cd dotfiles
