@@ -1,2 +1,2 @@
-local drylab_dark = require('drylab_dark')
-  return drylab_dark
+local drylab_light = require('drylab_light')
+  return drylab_light

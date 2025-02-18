@@ -20,6 +20,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   sudo ln -sf ~/.files/scripts/menu /usr/bin/menu
   sudo ln -sf ~/.files/scripts/music /usr/bin/music
   sudo ln -sf ~/.files/scripts/switchmode /usr/bin/switchmode
+  sudo ln -sf ~/.files/scripts/switchpowermode /usr/bin/switchpowermode
   sudo cp -r ~/files/scripts/sudoers /etc/sudoers
   sudo ln -sf ~/.files/scripts/switchwallpaper /usr/bin/switchwallpaper
 

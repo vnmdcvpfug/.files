@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if pgrep -x hyprpaper > /dev/null; then
+  pkill hyprpaper
+  hyprctl keyword decoration:blur:enabled false
+  echo "local opacity = { opacity = 1.00 }
+  return opacity" > ~/.config/wezterm/current_opacity.lua
+else
+  hyprctl keyword decoration:blur:enabled true
+  echo "local opacity = { opacity = 0.75 }
+  return opacity" > ~/.config/wezterm/current_opacity.lua
+  hyprctl dispatch exec hyprpaper
+fi

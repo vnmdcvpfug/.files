@@ -1,5 +1,6 @@
 local wezterm = require 'wezterm'
 local current_theme = require('current_theme')
+local current_opacity = require('current_opacity')
 
 local config = {
   enable_wayland = false,
@@ -9,7 +10,6 @@ local config = {
   default_cursor_style = "SteadyUnderline",
   font = wezterm.font('Noto Sans Mono', { weight = 'Regular', italic = false }),
   font_size = 11.0,
-  window_background_opacity = 0.75,
   window_padding = {
     left =   8,
     right =  8,
@@ -18,5 +18,6 @@ local config = {
   },
 }
 
+config.window_background_opacity = current_opacity.opacity
 config.colors = current_theme.colors
 return config
