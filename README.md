@@ -1,7 +1,7 @@
 <h3 align=center>my dotfiles</h3>
 
-<img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/20250216_04h50m05s_grim.png">
-<img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/20250216_04h55m14s_grim.png">
+<img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/dotfiles_dark.jpg">
+<img src="https://github.com/vnmdcvpfug/.files/blob/main/screenshots/dotfiles_light.jpg">
 
 ### Description
 - Document viewer - [zathura](https://github.com/pwmt/zathura)
@@ -46,6 +46,10 @@ cd dotfiles
   <tr>
     <td>Leader + M</td>
     <td>Switch mode</td>
+  </tr>
+  <tr>
+    <td>Leader + Shift + M</td>
+    <td>Switch power mode</td>
   </tr>
   <tr>
     <td>Leader + W</td>
