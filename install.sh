@@ -35,6 +35,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   ln -sf ~/.files/.config/inori ~/.config/inori
   ln -sf ~/.files/.config/mpd ~/.config/mpd
   ln -sf ~/.files/.config/nvim ~/.config/nvim
+  ln -sf ~/.files/.config/ranger ~/.config/ranger
   ln -sf ~/.files/.config/tmux ~/.config/tmux
   ln -sf ~/.files/.config/wezterm ~/.config/wezterm
   ln -sf ~/.files/.config/zathura ~/.config/zathura
@@ -42,7 +43,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
 
   # Install packages
   echo -e "\nInstalling the packages..."
-  sudo pacman -S bluez bluez-utils chromium hyprland hyprpaper mpv mpd noto-fonts noto-fonts-cjk noto-fonts-emoji neovim ripgrep tmux tor torsocks wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland wezterm zathura zathura-pdf-mupdf
+  sudo pacman -S bluez bluez-utils chromium hyprland hyprpaper mpd mpv noto-fonts noto-fonts-cjk noto-fonts-emoji neovim ranger ripgrep tmux tor torsocks wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland wezterm zathura zathura-pdf-mupdf
   mkdir -p ~/opt
   cd ~/opt
   git clone https://github.com/eshrh/inori
