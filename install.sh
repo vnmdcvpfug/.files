@@ -18,7 +18,6 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   sudo ln -sf ~/.files/scripts/batteryctl.service /etc/systemd/system/batteryctl.service
   sudo ln -sf ~/.files/scripts/brightnessctl /usr/bin/brightnessctl
   sudo ln -sf ~/.files/scripts/menu /usr/bin/menu
-  sudo ln -sf ~/.files/scripts/music /usr/bin/music
   sudo ln -sf ~/.files/scripts/switchmode /usr/bin/switchmode
   sudo ln -sf ~/.files/scripts/switchpowermode /usr/bin/switchpowermode
   sudo cp -r ~/files/scripts/sudoers /etc/sudoers
@@ -32,8 +31,6 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   # Make symbolic links
   echo -e "\nCreating symbolic links..."
   ln -sf ~/.files/.config/hypr ~/.config/hypr
-  ln -sf ~/.files/.config/inori ~/.config/inori
-  ln -sf ~/.files/.config/mpd ~/.config/mpd
   ln -sf ~/.files/.config/nvim ~/.config/nvim
   ln -sf ~/.files/.config/ranger ~/.config/ranger
   ln -sf ~/.files/.config/tmux ~/.config/tmux
@@ -43,16 +40,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
 
   # Install packages
   echo -e "\nInstalling the packages..."
-  sudo pacman -S bluez bluez-utils chromium hyprland hyprpaper mpd mpv noto-fonts noto-fonts-cjk noto-fonts-emoji neovim ranger ripgrep tmux tor torsocks wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland wezterm zathura zathura-pdf-mupdf
-  mkdir -p ~/opt
-  cd ~/opt
-  git clone https://github.com/eshrh/inori
-  cd ~/opt/inori
-  sudo pacman -S rust
-  cargo install inori
-  sudo pacman -Rns rust
-  sudo mv ~/.cargo/bin/inori /usr/bin/inori
-  rm -fr ~/.cargo
+  sudo pacman -S bluez bluez-utils chromium hyprland hyprpaper noto-fonts noto-fonts-cjk noto-fonts-emoji neovim ranger ripgrep tmux tor torsocks wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland wezterm zathura zathura-pdf-mupdf
 
   # End
   echo -en "\nThe installation is complete. Would you like to start Hyprland? [Y/n]"; read choice_hyprland

@@ -1,5 +1,0 @@
-#!/bin/bash
-systemctl --user enable --now mpd
-inori
-systemctl --user disable --now mpd
-exit

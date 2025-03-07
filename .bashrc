@@ -38,6 +38,21 @@ alias syu='sudo pacman -Syu'
 alias h='hyprland'
 alias nvim='export NVIM_LISTEN_ADDRESS="/tmp/nvim-$$.sock" && nvim --listen "$NVIM_LISTEN_ADDRESS"'
 alias ranger='ranger --choosedir=$HOME/.files/.rangerdir; LASTDIR=`cat $HOME/.files/.rangerdir`; cd "$LASTDIR"'
+shuffle() {
+    find "$HOME/music/$1" -type f -name "*" | shuf | while IFS= read -r file; do
+        ffplay -nodisp -autoexit -volume 10 "$file"
+    done
+}
+play() {
+    find "$HOME/music/$1" -type f -name "*" | while IFS= read -r file; do
+        ffplay -nodisp -autoexit -volume 10 "$file"
+    done
+}
+
+# git aliases
+push() {
+  git push https://vnmdcvpfug:$(sudo cat $HOME/.files/token)@github.com/vnmdcvpfug/$1.git
+}
 
 # exports
 export EDITOR=nvim
