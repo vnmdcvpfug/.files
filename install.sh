@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-echo -e "\ndotfiles v0.2.0"
+echo -e "\ndotfiles v0.3.0"
 echo -e "Author: vnmdcvpfug"
 echo -e "Source: https://github.com/vnmdcvpfug/.files\n"
 echo -e "Welcome to the installation script."
