@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-echo -e "\ndotfiles v0.3.0"
+echo -e "\ndotfiles v0.3.1"
 echo -e "Author: vnmdcvpfug"
 echo -e "Source: https://github.com/vnmdcvpfug/.files\n"
 echo -e "Welcome to the installation script."
@@ -20,7 +20,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   sudo ln -sf ~/.files/scripts/menu /usr/bin/menu
   sudo ln -sf ~/.files/scripts/switchmode /usr/bin/switchmode
   sudo ln -sf ~/.files/scripts/switchpowermode /usr/bin/switchpowermode
-  sudo cp -r ~/files/scripts/sudoers /etc/sudoers
+  sudo cp -r ~/.files/scripts/sudoers /etc/sudoers
   sudo ln -sf ~/.files/scripts/switchwallpaper /usr/bin/switchwallpaper
 
   # Configure the system
