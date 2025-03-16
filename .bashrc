@@ -10,10 +10,15 @@ PS1='> '
 
 # system aliases
 alias bat='cat /sys/class/power_supply/BAT1/capacity'
+alias nmoff='sudo systemctl disable --now NetworkManager && sudo systemctl mask NetworkManager'
+alias nmon='sudo systemctl unmask NetworkManager && sudo systemctl enable --now NetworkManager'
+alias off='sudo systemctl disable --now NetworkManager && sudo systemctl mask NetworkManager && sudo systemctl disable --now bluetooth && sudo systemctl mask bluetooth && sudo systemctl poweroff'
+alias on='sudo systemctl disable --now NetworkManager && sudo systemctl mask NetworkManager && sudo systemctl disable --now bluetooth && sudo systemctl mask bluetooth && sudo systemctl reboot'
 alias t='cat /sys/class/thermal/thermal_zone0/temp'
 alias vol='wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk "{print int($2 * 100)}"'
-alias btoff='sudo systemctl disable --now bluetooth'
+alias btoff='sudo systemctl disable --now bluetooth && sudo systemctl mask bluetooth'
 bton() {
+  sudo systemctl unmask bluetooth
   sudo systemctl enable --now bluetooth
   sleep 0.5
   bluetoothctl connect $(sudo cat ~/.files/device)
