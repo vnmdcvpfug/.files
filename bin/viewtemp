@@ -1,0 +1,2 @@
+#!/bin/bash
+awk '{print "\ue1ff" $1 / 1000 "°C"}' /sys/class/thermal/thermal_zone0/temp

@@ -1,0 +1,3 @@
+#!/bin/bash
+free -m | awk '/Mem:/ {printf "\uf7a3%d%%", ($3/$2)*100}'
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
+
+if [ "$volume" -eq 0 ]; then
+    echo "\ue04e$volume%"
+elif [ "$volume" -lt 50 ]; then
+    echo "\ue04d$volume%"
+else
+    echo "\ue050$volume%"
+fi
+

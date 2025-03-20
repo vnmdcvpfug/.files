@@ -14,8 +14,6 @@ alias nmoff='sudo systemctl disable --now NetworkManager && sudo systemctl mask 
 alias nmon='sudo systemctl unmask NetworkManager && sudo systemctl enable --now NetworkManager'
 alias off='sudo systemctl disable --now NetworkManager && sudo systemctl mask NetworkManager && sudo systemctl disable --now bluetooth && sudo systemctl mask bluetooth && sudo systemctl poweroff'
 alias on='sudo systemctl disable --now NetworkManager && sudo systemctl mask NetworkManager && sudo systemctl disable --now bluetooth && sudo systemctl mask bluetooth && sudo systemctl reboot'
-alias t='cat /sys/class/thermal/thermal_zone0/temp'
-alias vol='wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk "{print int($2 * 100)}"'
 alias btoff='sudo systemctl disable --now bluetooth && sudo systemctl mask bluetooth'
 bton() {
   sudo systemctl unmask bluetooth
@@ -43,16 +41,6 @@ alias syu='sudo pacman -Syu'
 alias h='hyprland'
 alias nvim='export NVIM_LISTEN_ADDRESS="/tmp/nvim-$$.sock" && nvim --listen "$NVIM_LISTEN_ADDRESS"'
 alias ranger='ranger --choosedir=$HOME/.files/.rangerdir; LASTDIR=`cat $HOME/.files/.rangerdir`; cd "$LASTDIR"'
-shuffle() {
-    find "$HOME/music/$1" -type f -name "*" | shuf | while IFS= read -r file; do
-        ffplay -nodisp -autoexit -volume 10 "$file"
-    done
-}
-play() {
-    find "$HOME/music/$1" -type f -name "*" | while IFS= read -r file; do
-        ffplay -nodisp -autoexit -volume 10 "$file"
-    done
-}
 
 # git aliases
 push() {

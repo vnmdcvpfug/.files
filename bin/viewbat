@@ -1,0 +1,13 @@
+#!/bin/bash
+isCharging=$(awk -F= '/POWER_SUPPLY_STATUS=/ {print $2}' /sys/class/power_supply/BAT1/uevent)
+battery_capacity=$(awk -F= '/POWER_SUPPLY_CAPACITY=/ {print $2 "%"}' /sys/class/power_supply/BAT1/uevent)
+if [[ "$isCharging" == "Not charging" ]]; then
+  battery_state="\uea0b"
+elif [[ "$isCharging" == "Discharging" ]]; then
+  battery_state="\ue1a4"
+elif [[ "$isCharging" == "Charging" ]]; then
+  battery_state="\uebdc"
+else
+  battery_state="u"
+fi
+echo $battery_state$battery_capacity

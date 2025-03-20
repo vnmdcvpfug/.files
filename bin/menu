@@ -2,4 +2,4 @@
 echo -en "    m  e  n  u\n\n"
 
 read -rp "open: " app
-hyprctl dispatch exec "$app" && exit
+i3-msg exec "$app" && exit

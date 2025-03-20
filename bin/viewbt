@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$(systemctl is-active bluetooth)" = "active" ]; then
+  echo "\ue1a7"
+elif [ "$(systemctl is-active bluetooth)" = "inactive" ]; then
+  echo "\ue1a9"
+fi
+

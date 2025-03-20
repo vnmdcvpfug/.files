@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$(systemctl is-active NetworkManager)" = "active" ]; then
+  echo "\ue80b"
+elif [ "$(systemctl is-active NetworkManager)" = "inactive" ]; then
+  echo "\uf1ca"
+fi
+
