@@ -38,7 +38,6 @@ alias se='pacman -Ss'
 alias syu='sudo pacman -Syu'
 
 # package aliases
-alias h='hyprland'
 alias nvim='export NVIM_LISTEN_ADDRESS="/tmp/nvim-$$.sock" && nvim --listen "$NVIM_LISTEN_ADDRESS"'
 alias ranger='ranger --choosedir=$HOME/.files/.rangerdir; LASTDIR=`cat $HOME/.files/.rangerdir`; cd "$LASTDIR"'
 
