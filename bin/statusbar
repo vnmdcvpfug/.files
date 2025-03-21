@@ -5,5 +5,5 @@ echo '['
 
 while true; do
   echo "[{\"full_text\":\"$(viewnet)\"}, {\"full_text\":\"$(viewnm)\"}, {\"full_text\":\"$(viewbt)\"}, {\"full_text\":\"$(viewtemp)\"}, {\"full_text\":\"$(viewcpu)\"}, {\"full_text\":\"$(viewram)\"}, {\"full_text\":\"$(viewvol)\"}, {\"full_text\":\"$(viewbl)\"}, {\"full_text\":\"$(viewbat)\"}, {\"full_text\":\"$(viewdate)\"}, {\"full_text\":\"$(viewtime)\"}],"
-  sleep 5
+  sleep 10
 done
