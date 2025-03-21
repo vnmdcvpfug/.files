@@ -53,8 +53,11 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   echo -e "\nInstalling the packages..."
   sudo pacman -S bluez bluez-utils chromium i3wm noto-fonts noto-fonts-cjk noto-fonts-emoji neovim ranger ripgrep xdg-desktop-portal-gtk wezterm zathura zathura-pdf-mupdf
   cd /usr/share/fonts
-  curl -O https://github.com/google/material-design-icons/blob/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
+  sudo curl -O https://github.com/google/material-design-icons/blob/master/variablefont/MaterialSymbolsSharp%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf
   cd ~
+  mkdir -p ~/.config/gtk-3.0
+  echo "[Settings]
+  gtk-application-prefer-dark-theme=1" > ~/.config/gtk-3.0/settings.ini
 
   # End
   echo -en "\nThe installation is complete. Would you like to start i3? [Y/n] "; read choice_i3

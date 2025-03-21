@@ -6,7 +6,7 @@ if [[ "$isCharging" == "Not charging" ]]; then
 elif [[ "$isCharging" == "Discharging" ]]; then
   battery_state="\ue1a4"
 elif [[ "$isCharging" == "Charging" ]]; then
-  battery_state="\uebdc"
+  battery_state="\ue1a3"
 else
   battery_state="u"
 fi
