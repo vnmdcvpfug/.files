@@ -1,0 +1,13 @@
+Xterm.vt100.metaSendsEscape: true
+XTerm*faceName: utf
+XTerm*faceSize: 6
+xterm*letterSpacing: 10
+XTerm.vt100.colorBDMode: true
+XTerm.vt100.colorBD: #FFFFFF
+
+XTerm*background: #000000
+XTerm*foreground: #BFBFBF
+
+XTerm.vt100.translations: #override \
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)

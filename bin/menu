@@ -1,0 +1,10 @@
+#!/bin/bash
+version="0.1.0"
+
+while true; do
+  echo "menu v$version"
+  tput cnorm
+  read -rep "open: " input
+  i3-msg exec "$input"
+  break
+done
