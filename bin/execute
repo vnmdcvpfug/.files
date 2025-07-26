@@ -1,0 +1,10 @@
+#!/bin/bash
+version="0.1.0"
+
+while true; do
+  echo "execute v$version"
+  tput cnorm
+  read -rep "run: " input
+  bash -i -c "$input"
+  break
+done
