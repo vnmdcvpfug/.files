@@ -41,6 +41,7 @@ bindsym $mod+n exec nautilus
 bindsym $mod+p sticky toggle
 bindsym $mod+q kill
 bindsym $mod+r exec xterm -name menu -e menu
+bindsym $mod+Shift+r exec xterm -name menu -title "menu" -e execute
 bindsym $mod+s split toggle
 bindsym $mod+Control+s layout toggle
 bindsym $mod+Shift+s layout toggle split
