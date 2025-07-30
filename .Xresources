@@ -1,6 +1,6 @@
 Xterm.vt100.metaSendsEscape: true
 XTerm*faceName: utf
-XTerm*faceSize: 6
+XTerm*faceSize: 14
 xterm*letterSpacing: 10
 XTerm.vt100.colorBDMode: true
 XTerm.vt100.colorBD: #FFFFFF
