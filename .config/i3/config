@@ -1,6 +1,6 @@
 floating_modifier $mod
 focus_follows_mouse yes
-font pango:utf 6
+font pango:utf 14
 set $mod Mod4
 tiling_drag modifier titlebar
 
