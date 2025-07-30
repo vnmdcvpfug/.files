@@ -45,7 +45,7 @@ WantedBy=multi-user.target" | sudo tee /etc/systemd/system/batteryctl.service > 
   sudo systemctl enable --now batteryctl.service
 
   echo -e "\nInstalling the packages..."
-  sudo pacman -S bluez bluez-utils chromium feh i3wm nautilus neovim oto-fonts noto-fonts-cjk noto-fonts-emoji xdg-desktop-portal-gtk xterm zathura zathura-pdf-mupdf
+  sudo pacman -S bluez bluez-utils chromium feh i3wm nautilus neovim noto-fonts noto-fonts-cjk noto-fonts-emoji xdg-desktop-portal-gtk xterm zathura zathura-pdf-mupdf
 
   echo -en "\nThe installation is complete. Would you like to start i3? [Y/n] "; read choice_i3
 else
