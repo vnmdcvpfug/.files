@@ -7,6 +7,7 @@
 
 # shell prompt
 PS1='> '
+export EDITOR=nvim
 
 # system aliases
 alias nm0='/bin/systemctl disable --now NetworkManager.service && /bin/systemctl mask NetworkManager.service'
