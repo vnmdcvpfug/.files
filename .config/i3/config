@@ -1,6 +1,6 @@
 floating_modifier $mod
 focus_follows_mouse yes
-font pango:utf 14
+font pango:utf 13
 set $mod Mod4
 tiling_drag modifier titlebar
 
@@ -13,8 +13,8 @@ exec_always feh --bg-scale $HOME/.files/wallpaper.png
 default_border pixel 0
 default_floating_border pixel 0
 
-for_window [title="floating-terminal"] floating enable, resize set 800 450, move position center
-for_window [title="menu"] floating enable, resize set 200 100, move position center, sticky enable
+for_window [title="floating"] floating enable, resize set 800 450, move position center
+for_window [title="menu"] floating enable, resize set 150 100, move position center, sticky enable
 
 client.focused #bfbfbf #000000 #bfbfbf #bfbfbf #bfbfbf
 client.focused_inactive #bfbfbf #000000 #bfbfbf #bfbfbf #bfbfbf
@@ -23,10 +23,10 @@ client.urgent #cd0000 #000000 #bfbfbf #bfbfbf #bfbfbf
 
 bindsym XF86MonBrightnessDown, exec --no-startup-id brightnessctl -25
 bindsym XF86MonBrightnessUp, exec --no-startup-id brightnessctl 25
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ 5%-
+bindsym XF86AudioMicMute exec --no-startup-id wpctl set-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioMute exec --no-startup-id wpctl set-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ 5%+
 
 bindsym $mod+b exec chromium
 bindsym $mod+c move position center
@@ -36,8 +36,7 @@ bindsym $mod+Escape exec pkill -KILL -u $(whoami)
 bindsym $mod+Shift+Escape restart
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+f floating toggle
-bindsym $mod+m exec spotify-launcher
-bindsym $mod+n exec nautilus
+bindsym $mod+e exec nautilus
 bindsym $mod+p sticky toggle
 bindsym $mod+q kill
 bindsym $mod+r exec xterm -name menu -e menu
@@ -46,12 +45,12 @@ bindsym $mod+s split toggle
 bindsym $mod+Control+s layout toggle
 bindsym $mod+Shift+s layout toggle split
 bindsym $mod+t exec xterm
-bindsym $mod+Shift+t exec xterm -name floating-terminal
+bindsym $mod+Shift+t exec xterm -name "floating"
 bindsym $mod+Shift+v focus mode_toggle
 bindsym $mod+Tab focus next
 bindsym $mod+Shift+Tab workspace next
 bindsym $mod+z exec zathura
-bindsym Print exec ffmpeg -f x11grab -video_size $(xdpyinfo | awk '/dimensions/{print $2}') -i $DISPLAY -vframes 1 ~/$(date +%Y%m%d%H%M%S).png
+bindsym Print exec ffmpeg -f x11grab -video_size $(xdpyinfo | awk '/dimensions/{print $2}') -i $DISPLAY -vframes 1 $HOME/screenshots/$(openssl rand -hex 4).png
 
 set $ws1 "1"
 set $ws2 "2"
