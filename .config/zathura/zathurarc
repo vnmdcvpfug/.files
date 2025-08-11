@@ -1,7 +1,7 @@
 set guioptions none
 set guioptions v
 set selection-clipboard clipboard
-set font 'utf 14'
+set font 'utf 13'
 
 set default-fg              rgba(191,191,191,1)
 set default-bg              rgba(0,0,0,1)
