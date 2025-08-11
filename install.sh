@@ -10,6 +10,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   cd
 
   echo -e "\nConfiguring the system..."
+  sudo mkdir -p /usr/share/fonts/
   sudo mv $HOME/.files/utf.otf /usr/share/fonts/utf.otf
   sudo ln -sf $HOME/.files/.bashrc $HOME/.bashrc
   sudo ln -sf $HOME/.files/.xinitrc $HOME/.xinitrc
@@ -22,7 +23,7 @@ if [ "$choice_proceed" ] || [ "y" ] || [ "Y" ] || [ "yes" ] || [ "Yes" ] || [ "Y
   done
 
   echo -e "\nInstalling the scripts..."
-  sudo mkdir -p /usr/bin
+  sudo mkdir -p /usr/bin/
   for file in "$HOME/.files/bin/"*; do
     sudo ln -sf $file /usr/bin/$(basename $file)
   done
@@ -45,7 +46,7 @@ WantedBy=multi-user.target" | sudo tee /etc/systemd/system/batteryctl.service > 
   sudo systemctl enable --now batteryctl.service
 
   echo -e "\nInstalling the packages..."
-  sudo pacman -S bluez bluez-utils chromium feh i3 nautilus neovim noto-fonts noto-fonts-cjk noto-fonts-emoji xdg-desktop-portal-gtk xorg xorg-xinit xterm zathura zathura-pdf-mupdf
+  sudo pacman -S bluez bluez-utils chromium feh i3 nautilus neovim noto-fonts noto-fonts-cjk noto-fonts-emoji pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse wireplumber xdg-desktop-portal-gtk xorg xorg-xinit xterm zathura zathura-pdf-mupdf
 
   echo -en "\nThe installation is complete. Would you like to start i3? [Y/n] "; read choice_i3
 else
